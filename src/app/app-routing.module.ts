@@ -14,6 +14,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'lista-heroes',
     pathMatch: 'full'
+  },
+  {
+    path: 'detalle-heroe',
+    loadChildren: () => import('./page/lista-heroes/detalle-heroe/detalle-heroe.module').then( m => m.DetalleHeroePageModule)
   }
 ];
 
