@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>lista-heroes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content color="light">
+    <ion-list [inset]="true">
+      <ion-item (click)="detalle_heroe(heroe)" *ngFor="let heroe of heroes">
+        <ion-label>{{heroe.name}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-content>
